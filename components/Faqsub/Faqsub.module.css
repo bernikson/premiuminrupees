@@ -1,7 +1,7 @@
 .FAQ_ITEM {
   width: 70%;
   padding: 2rem;
-  background-color: #1e1e1e;
+  background-color: var(--ltbg);
   border-radius: 5px;
   display: flex;
   flex-direction: column;
