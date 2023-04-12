@@ -1,4 +1,4 @@
-import styles from "../styles/Home.module.css";
+import styles from "../styles/HomePage.module.css";
 import { Toaster } from "react-hot-toast";
 import EmailLI from "../svgs/EmailLI";
 import PhoneLI from "../svgs/PhoneLI";
