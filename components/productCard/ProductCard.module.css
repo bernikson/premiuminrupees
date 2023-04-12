@@ -1,0 +1,132 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: hsl(220, 17%, 12%);
+  box-shadow: 0px 0px 20px var(--ltbg);
+  cursor: pointer;
+}
+
+.product_top {
+  padding: 2rem 1rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--greyTwo);
+}
+
+.product_image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+  width: 13rem;
+  border-radius: 5px;
+  height: 13rem;
+  margin: auto;
+}
+
+.product_bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.product_bottom_price_wrapper {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.product_bottom_price_wrapper > span {
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.product_bottom_old_price {
+  font-weight: 400 !important;
+  color: var(--grey) !important;
+  font-size: 1.1rem !important;
+}
+
+.product_details_rating {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+}
+
+.product_details_rating span {
+  margin-left: 0.4rem;
+  color: #f2d066;
+}
+
+.product_bottom h3 {
+  color: var(--grey);
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+.product_wishlist {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  background-color: #0c0c0c;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0.7rem;
+  right: 1rem;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.product_wishlist:active {
+  transform: scale(0.8);
+}
+
+.product_wishlist svg {
+  min-width: 20px;
+  fill: var(--secondary);
+  height: 20px;
+  transition: 0.4s;
+}
+
+/* .product_wishlist:hover {
+  background-color: var(--secondary);
+}
+
+.product_wishlist:hover svg {
+  fill: var(--bg);
+} */
+
+@media screen and (max-width: 450px) {
+  .product_image {
+    width: 9rem;
+    height: 9rem;
+  }
+  .product_bottom h3 {
+    font-size: 1rem;
+  }
+  .product_wishlist {
+    width: 2rem;
+    height: 2rem;
+  }
+  .product_details_rating svg {
+    width: 14px;
+    height: 14px;
+  }
+  .product_top {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .product {
+    margin: auto;
+  }
+}

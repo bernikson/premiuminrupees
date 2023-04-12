@@ -1,0 +1,365 @@
+.nav {
+  display: flex;
+  align-items: center;
+  background-color: var(--ltbg);
+  padding: 0.2rem 8rem;
+  justify-content: space-between;
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+}
+.nav_logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav_logo h5 {
+  font-size: 1.3rem;
+  margin: 0;
+  color: #5a9fe9;
+  font-weight: 500;
+}
+
+.nav_logo h5 span {
+  font-weight: 800;
+  color: var(--secondary);
+}
+
+.nav_logo svg {
+  width: 80px;
+}
+
+.nav_search {
+  display: flex;
+}
+
+.nav_search input {
+  border: 1.5px solid var(--grey);
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  font-size: 1rem;
+  color: white;
+  background-color: transparent;
+  font-weight: 500;
+  width: 25rem;
+  background-color: var(--bg);
+}
+
+.nav_dropdown {
+  position: relative;
+
+  /* height: 100%; */
+}
+.nav_dropdown_true {
+  transform: translateX(-50%) scale(1) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.nav_dropdown > span {
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+  display: inline-block;
+  height: 100%;
+  padding: 0rem 1rem;
+  cursor: pointer;
+  border: 1.5px solid var(--grey);
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+  width: 11rem;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav_dropdown > span svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--grey);
+  transition: 0.2s;
+  transform: rotate(180deg);
+}
+
+.nav_dropdown_svg svg {
+  transform: rotate(0deg) !important;
+}
+
+.nav_dropdown > span:active {
+  transform: scale(0.9);
+}
+.nav_dropdown ul {
+  padding: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(0.7);
+  margin: 0;
+  position: absolute;
+  top: 150%;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 0.7rem;
+  width: 12rem;
+  background-color: var(--ltbg);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s ease-in-out;
+  height: 15rem;
+  overflow-y: scroll;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.nav_dropdown ul::-webkit-scrollbar {
+  width: 5px;
+}
+
+.nav_dropdown ul::-webkit-scrollbar-thumb {
+  background-color: var(--grey);
+  border-radius: 100px;
+}
+
+.nav_dropdown ul li {
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.nav_dropdown ul li:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.nav_search button {
+  border: none;
+  background-color: var(--secondary);
+  color: white;
+  font-size: 1rem;
+  padding: 0rem 1.3rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 600;
+}
+
+.nav_search button svg {
+  display: none;
+  stroke: white;
+}
+
+.nav_search button:active {
+  transform: scale(0.9);
+}
+
+.nav_links div {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.nav_links a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--grey);
+  gap: 0.2rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.nav_links a svg {
+  height: 20px;
+  width: 20px;
+}
+
+.nav_ham {
+  display: none !important;
+}
+
+.nav_res_links button {
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.nav_res_links button:first-child {
+  color: var(--secondary);
+}
+
+.nav_res_links button:last-child {
+  background-color: var(--secondary);
+  color: white;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 1600px) {
+  .nav {
+    padding: 0.2rem 5rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .nav {
+    padding: 0.2rem 2rem;
+  }
+  .nav_search input {
+    width: 15rem;
+  }
+  .nav_dropdown > span {
+    width: 11rem;
+    padding: 0rem 1rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .nav_logo h5 {
+    display: none;
+  }
+  .nav_dropdown span {
+    width: auto;
+  }
+  .nav_dropdown span span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav_search button svg {
+    display: block;
+    width: 25px;
+    height: 25px;
+    fill: var(--secondary);
+  }
+  .nav_search button {
+    padding: 0rem 1rem;
+  }
+  .nav_search button span {
+    display: none;
+  }
+  .nav_res_links {
+    position: absolute;
+    top: 0;
+    right: -30%;
+    height: 100vh;
+    flex-direction: column;
+    background-color: var(--ltbg);
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem !important;
+    width: 30%;
+    transition: 0.4s ease-in-out;
+    z-index: 5;
+  }
+
+  .nav_res_links a svg {
+    display: none;
+  }
+
+  .nav_ham {
+    position: relative;
+    z-index: 10;
+    display: block !important;
+  }
+
+  .nav_res_links_trigger {
+    right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav_logo {
+    width: 70px;
+  }
+  .nav_ham {
+    height: 65px;
+    width: 65px;
+  }
+
+  .nav_ham svg {
+    width: 65px;
+    height: 65px;
+  }
+
+  .nav input {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.7rem;
+    width: 12rem;
+  }
+  .nav_links a {
+    font-size: 0.9rem;
+  }
+  .nav_search button svg {
+    min-width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    padding: 0.2rem 1rem;
+  }
+  .nav_logo {
+    width: 50px;
+  }
+  .nav_ham {
+    height: 45px;
+    width: 45px;
+  }
+  .nav_ham svg {
+    width: 45px;
+    height: 45px;
+  }
+  .nav_search button svg {
+    width: 18px;
+    height: 18px;
+  }
+  .nav input {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.7rem;
+    width: 12rem;
+  }
+  .nav_links a {
+    font-size: 0.9rem;
+  }
+  .nav_links div {
+    width: 50%;
+  }
+  .nav_res_links {
+    right: -50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav_dropdown ul li {
+    font-size: 0.8rem;
+  }
+  .nav_dropdown ul {
+    width: 8rem;
+  }
+  .nav input {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.7rem;
+    width: 10rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav_dropdown span {
+    padding: 0rem 0.5rem;
+  }
+  .nav {
+    padding: 0.2rem;
+  }
+  .nav_search button {
+    padding: 0rem 0.5rem !important;
+  }
+}

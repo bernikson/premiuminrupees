@@ -1,0 +1,431 @@
+.myaccount {
+  padding: 0rem 10rem;
+  padding-top: 7rem;
+}
+
+.myaccount h2 {
+  color: white;
+  font-weight: 600;
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+.myaccount_content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4rem;
+  flex-grow: 1;
+}
+
+.myaccount_content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.myaccount main {
+  width: 100%;
+  display: flex;
+}
+
+.myaccount_nav ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.myaccount_nav ul li {
+  list-style-type: none;
+  color: var(--grey);
+  padding: 0.7rem 0;
+  padding-left: 0.5rem;
+  white-space: nowrap;
+  padding-right: 5rem;
+  font-size: 1rem;
+  border-right: 2px solid var(--grey);
+  cursor: pointer;
+  padding-left: 1.2rem;
+}
+
+.myaccount_nav ul li:active {
+  background-color: var(--ltbg);
+}
+
+.myaccount_selected_list {
+  background-color: var(--secondary);
+  color: white !important;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: 2px solid var(--secondary) !important;
+}
+
+.myaccount_content form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.myaccount_content form fieldset {
+  margin: 0;
+  padding: 0;
+  border: 2px solid var(--grey);
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+}
+
+.myaccount_content form fieldset input {
+  background-color: transparent;
+  font-size: 1rem;
+  color: white;
+  border: none;
+}
+
+.myaccount_content form fieldset input:focus {
+  outline: none;
+}
+
+.myaccount_content form fieldset:focus-within {
+  border: 2px solid var(--secondary);
+}
+
+.myaccount_content form fieldset input:focus::placeholder {
+  color: var(--secondary);
+}
+
+.myaccount_content > h2 {
+  color: var(--grey);
+}
+
+.myaccount_content > button {
+  align-self: flex-start;
+  margin-top: 1.5rem;
+  background-color: var(--secondary);
+  padding: 0.8rem 1.9rem;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s ease-in-out;
+  font-weight: 600;
+}
+
+.myaccount_content > button:active {
+  transform: scale(0.8);
+}
+
+.table_add_to_cart {
+  background-color: var(--secondary);
+  padding: 0.5rem 1rem !important;
+  border-radius: 5px;
+  height: auto !important;
+  color: white;
+  cursor: pointer;
+  box-sizing: border-box !important;
+  font-size: 0.9rem !important;
+  font-weight: bold;
+  width: 7rem;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+
+.table_add_to_cart:hover {
+  color: white !important;
+}
+
+.table_add_to_cart:active {
+  transform: scale(0.8);
+}
+
+.table_add_to_cart_contact {
+  background-color: #212b36;
+  padding: 0.5rem 1rem !important;
+  border-radius: 5px;
+  height: auto !important;
+  color: white;
+  cursor: pointer;
+  box-sizing: border-box !important;
+  font-size: 0.9rem !important;
+  width: 7rem;
+  font-weight: bold;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+
+.table_add_to_cart_contact:hover {
+  color: white !important;
+}
+
+.table_add_to_cart_contact:active {
+  transform: scale(0.8);
+}
+.table_product {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.table_product > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.table_product > div h6 {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.table_product_price {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.table_product > div span {
+  padding: 0;
+  margin: 0;
+  color: var(--grey);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.table_stock {
+  padding: 0.5rem 1.2rem;
+  border-radius: 15px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgba(19, 194, 150, 0.08);
+  color: #13c296;
+}
+
+.table_out_of_stock {
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgba(220, 38, 38, 0.08);
+  color: #dc2626;
+}
+
+.table_trash {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.table_trash:active {
+  background-color: hsla(0, 0%, 35%, 0.2);
+}
+
+.table_trash:hover svg {
+  fill: red !important;
+}
+
+.table_trash svg {
+  fill: grey !important;
+}
+
+.myaccount_referral {
+  width: 100%;
+  padding: 2rem 2.5rem;
+  border-radius: 10px;
+  background-color: var(--ltbg);
+  border: 1.5px solid var(--grey);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.myaccount_referral h3 {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 0rem;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+.myaccount_referral span {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: var(--ltbg);
+  border: 1.5px solid var(--grey);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.myaccount > div {
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.myaccount_dropdown {
+  position: relative;
+  display: none;
+}
+
+.myaccount_dropdown > div {
+  background-color: var(--ltbg);
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  gap: 0.6rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  justify-content: space-between;
+  border: 1px solid var(--grey);
+}
+
+.myaccount_dropdown ul {
+  padding: 0;
+  position: absolute;
+  margin: 0;
+  top: 120%;
+  background-color: var(--ltbg);
+  padding: 0.7rem;
+  border-radius: 8px;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  width: 14rem;
+  transform: scale(0.8);
+  z-index: 3;
+  transition: 0.2s ease-in-out;
+  border: 1px solid var(--grey);
+}
+
+.myaccount_dropdown_trigger {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+  visibility: visible !important;
+}
+
+.myaccount_dropdown ul li {
+  list-style-type: none;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.myaccount_dropdown_selected_list {
+  color: var(--secondary) !important;
+}
+
+.myaccount_dropdown ul li:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.myaccount_dropdown > div svg {
+  fill: white;
+  width: 17px;
+  height: 17px;
+}
+
+.myaccount_referral span:hover {
+  background-color: var(--grey);
+}
+
+@media screen and (max-width: 1700px) {
+  .myaccount_content form {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .myaccount_content form {
+    grid-template-columns: 1fr 1fr;
+  }
+  .myaccount {
+    padding: 0rem 4rem;
+    padding-top: 7rem;
+  }
+  .table_product > div h6 {
+    font-size: 1rem;
+  }
+
+  .table_product > div span {
+    font-size: 0.9rem;
+  }
+  .table_product_price {
+    font-size: 1.1rem;
+  }
+  .table_stock,
+  .table_out_of_stock {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  .table_add_to_cart,
+  .table_add_to_cart_contact {
+    padding: 0.4rem 0.8rem !important;
+    width: 6rem;
+    font-size: 0.8rem !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .myaccount_content {
+    margin-left: 0rem;
+  }
+  .myaccount_nav {
+    display: none;
+  }
+  .table_trash {
+    width: 2rem;
+    height: 2rem;
+    margin: auto;
+    white-space: nowrap;
+  }
+  .myaccount_dropdown {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .myaccount h2 {
+    font-size: 1.2rem;
+  }
+  .myaccount_dropdown > div {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .myaccount form {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .myaccount {
+    padding: 0rem 1.5rem;
+    padding-top: 5rem;
+  }
+  .myaccount_referral {
+    padding: 1rem 1.5rem;
+  }
+  .myaccount_referral h3 {
+    margin-bottom: 0.7rem;
+    font-size: 1.1rem;
+  }
+  .myaccount_referral span {
+    word-break: break-all;
+  }
+}

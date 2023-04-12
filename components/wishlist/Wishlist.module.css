@@ -1,0 +1,147 @@
+.wishlist {
+  border-radius: 5px;
+  margin: 2rem 10rem;
+}
+
+.wishlist h4 {
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.wishlist ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 3.5rem;
+}
+
+.wishlist ul li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(220, 17%, 12%);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px var(--ltbg);
+}
+
+.wishlist ul li img {
+  width: 10rem;
+  height: 10rem;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+}
+.wishlist ul li p {
+  margin: 0;
+  color: #ababab;
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.wishlist ul li h4 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+}
+
+.wishlist ul li h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.wishlist ul li button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--grey);
+  color: var(--secondary);
+  width: fit-content;
+  padding: 0.7rem 1.3rem;
+  background-color: var(--bg);
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1600px) {
+  .wishlist {
+    margin: 2rem 7rem;
+    margin-top: 8rem;
+  }
+
+  .wishlist ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .wishlist {
+    margin: 2rem 4rem;
+    margin-top: 8rem;
+  }
+
+  .wishlist ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .wishlist ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .wishlist ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wishlist {
+    margin: 2rem;
+    margin-top: 5rem;
+  }
+}
+
+/* @media screen and (max-width: 1000px) {
+    .cart_sub > div {
+      flex-direction: column;
+    }
+  
+    .cart_sub > div > aside:first-child {
+      width: 100%;
+    }
+    .cart_sub_coupon_inner input {
+      flex-grow: 1;
+      width: 100%;
+    }
+  }
+  
+
+  @media screen and (max-width: 500px) {
+    .cart_sub aside ul li img {
+      width: 40px;
+      height: 40px;
+    }
+    .cart_sub_item_info h5 {
+      font-size: 1.2rem;
+    }
+    .cart_sub_item_info span {
+      font-size: 1rem;
+    }
+    .cart_sub aside > ul li h4 {
+      font-size: 1.3rem;
+    }
+  }
+   */

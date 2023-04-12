@@ -1,0 +1,148 @@
+.auth_wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  position: fixed;
+  inset: 0 0 0 0;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+}
+
+.form_close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth_toggle {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.auth_toggle > form {
+  transform: scale(1) !important;
+}
+
+.form_close:active {
+  transform: scale(0.9);
+}
+
+.auth_wrapper form {
+  padding: 1.5rem 5rem;
+  background-color: var(--ltbg);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transform: scale(0.7);
+  transition: 0.4s;
+}
+
+.auth_logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -2rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 8px;
+  background-color: var(--secondary);
+  background-image: url("../../images/logodark.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.auth_wrapper form h2 {
+  margin: 0;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.auth_wrapper form label {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.auth_wrapper form > input {
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--grey);
+  font-size: 1rem;
+  padding: 0.7rem 1.3rem;
+  width: 25rem;
+  background-color: transparent;
+}
+
+.auth_misc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.auth_misc div {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.auth_misc div label {
+  margin: 0;
+  color: white;
+  font-size: 1rem;
+}
+
+.auth_misc div input {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  cursor: pointer;
+  accent-color: var(--secondary);
+}
+
+.auth_misc div input::before {
+  border-radius: 8px;
+}
+
+.auth_misc > span {
+  color: var(--secondary);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.auth_wrapper form button {
+  border-radius: 8px;
+  padding: 0.9rem 1.3rem;
+  background-color: var(--secondary);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  margin-top: 1.5rem;
+  color: white;
+}
+
+.auth_wrapper form > p {
+  display: flex;
+  gap: 0.5rem;
+  text-align: center;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.auth_wrapper form > p > span {
+  font-weight: bold;
+  color: var(--secondary);
+  cursor: pointer;
+}

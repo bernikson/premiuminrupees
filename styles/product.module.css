@@ -1,0 +1,27 @@
+.product_page {
+  display: flex;
+  gap: 1rem;
+  padding: 0rem 9rem;
+  padding-top: 7rem;
+}
+
+@media screen and (max-width: 1600px) {
+  .product_page {
+    padding: 0rem 6rem;
+    padding-top: 7rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .product_page {
+    padding: 0rem 3rem;
+    padding-top: 7rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .product_page {
+    padding: 0rem 1rem;
+    padding-top: 5rem;
+  }
+}
